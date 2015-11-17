@@ -33,7 +33,9 @@
         </activity>
 
         <activity android:name=".BarcodeCaptureActivity"
-            android:label="Read Barcode"/>
+            android:label="Leer Codigo de Barras"/>
+
+        <activity android:name=".ActividadLlenado" android:label="SIBTC QUIMPAC DE COLOMBIA S.A. LLENADO"/>
     </application>
 
 </manifest>

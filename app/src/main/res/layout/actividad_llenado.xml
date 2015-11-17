@@ -7,7 +7,7 @@
     android:padding="10dp">
     <FrameLayout
         android:layout_width="311dp"
-        android:layout_height="200"
+        android:layout_height="200dp"
         android:layout_weight="0.76">
 
         <FrameLayout
