@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefefe">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LLenado Recipiente"
+        android:id="@+id/x_llenado"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/x_acttara"
+        android:layout_toStartOf="@+id/x_acttara" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Tara"
+        android:id="@+id/x_acttara"
+        android:layout_alignTop="@+id/x_llenado"
+        android:layout_toLeftOf="@+id/x_actcodigo"
+        android:layout_toStartOf="@+id/x_actcodigo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Codigo de Barras"
+        android:id="@+id/x_actcodigo"
+        android:layout_alignTop="@+id/x_acttara"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar aplicacion"
+        android:id="@+id/x_cerrar"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/x_llenado"
+        android:layout_toEndOf="@+id/x_llenado" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/x_llenado"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/quimpac"
+        android:layout_toStartOf="@+id/x_acttara"
+        android:layout_toLeftOf="@+id/x_acttara" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/banner" />
+
+</RelativeLayout>
