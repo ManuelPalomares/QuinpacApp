@@ -11,7 +11,7 @@
         android:layout_weight="0.76">
 
         <FrameLayout
-            android:layout_width="269dp"
+            android:layout_width="match_parent"
             android:layout_height="81dp"
             android:layout_margin="10dp"
             android:padding="10dp">
@@ -22,14 +22,17 @@
                 android:text="Codigo de Barras:"
                 android:id="@+id/textView"
                 android:layout_gravity="left|bottom"
-                android:textColor="#1a0000" />
+                android:textColor="#1a0000"
+                android:textSize="10dp" />
 
             <EditText
-                android:layout_width="105dp"
+                android:layout_width="123dp"
                 android:layout_height="33dp"
-                android:id="@+id/editText"
+                android:id="@+id/x_codigobarrascapturado"
                 android:layout_gravity="center_horizontal|bottom"
-                android:background="#f3f1f1" />
+                android:background="#f3f1f1"
+                android:textColor="#403b3b"
+                android:textSize="8dp" />
 
             <Button
                 android:layout_width="64dp"
@@ -41,8 +44,8 @@
         </FrameLayout>
 
         <FrameLayout
-            android:layout_width="269dp"
-            android:layout_height="57dp"
+            android:layout_width="290dp"
+            android:layout_height="112dp"
             android:layout_margin="10dp"
             android:padding="10dp"
             android:layout_weight="0.36"
@@ -54,19 +57,21 @@
                 android:text="Lote:"
                 android:id="@+id/textView2"
                 android:layout_gravity="left|top"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:textSize="10dp" />
 
             <EditText
-                android:layout_width="86dp"
-                android:layout_height="wrap_content"
+                android:layout_width="123dp"
+                android:layout_height="36dp"
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/editText2"
                 android:layout_gravity="center_horizontal|top"
-                android:background="#f3f1f1" />
+                android:background="#f3f1f1"
+                android:textColor="#000000" />
 
             <Spinner
-                android:layout_width="86dp"
+                android:layout_width="123dp"
                 android:layout_height="36dp"
                 android:id="@+id/spinner"
                 android:layout_gravity="center_horizontal|bottom"
@@ -78,7 +83,8 @@
                 android:text="Estacion:"
                 android:id="@+id/textView3"
                 android:layout_gravity="left|bottom"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:textSize="10dp" />
 
 
         </FrameLayout>

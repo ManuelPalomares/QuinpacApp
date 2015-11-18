@@ -34,5 +34,9 @@ public class ActividadPrincipal extends Activity {
 
     public void abrirFormaLLenado(){
         Intent intent = new Intent(this,ActividadLlenado.class);
+        startActivity(intent);
+
     }
+
+
 }
