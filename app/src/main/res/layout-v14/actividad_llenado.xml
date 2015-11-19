@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:weightSum="1"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="467dp"
+        android:layout_height="fill_parent"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout">
+
+        <FrameLayout
+            android:layout_width="420dp"
+            android:layout_height="94dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:elevation="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipiente:"
+                android:id="@+id/textView4"
+                android:textColor="#000000"
+                android:layout_gravity="left|top"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Codigo de Barras:"
+                android:id="@+id/textView"
+                android:layout_gravity="left|center_vertical"
+                android:textColor="#1a0000"
+                android:textSize="12dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:layout_width="156dp"
+                android:layout_height="32dp"
+                android:id="@+id/x_codigobarrascapturado"
+                android:layout_gravity="center"
+                android:background="#f3f1f1"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/x_codigobarras"
+                android:layout_gravity="right|center_vertical"
+                android:background="@android:drawable/ic_menu_camera" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="420dp"
+            android:layout_height="140dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_weight="0.36"
+            android:layout_gravity="left|center_vertical"
+            android:elevation="10dp">
+
+            <TextView
+                android:layout_width="139dp"
+                android:layout_height="38dp"
+                android:text="Estacion:"
+                android:id="@+id/textView3"
+                android:layout_gravity="left|bottom"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="Lote:"
+                android:id="@+id/textView2"
+                android:layout_gravity="left|center_vertical"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:layout_width="230dp"
+                android:layout_height="36dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/x_lote"
+                android:layout_gravity="right|center_vertical"
+                android:background="#f3f1f1"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:layout_width="230dp"
+                android:layout_height="36dp"
+                android:id="@+id/spinner"
+                android:layout_gravity="right|bottom"
+                android:background="#f3f1f1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Llenado:"
+                android:id="@+id/textView5"
+                android:layout_gravity="left|top"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+
+        </FrameLayout>
+
+        <Button
+            android:layout_width="226dp"
+            android:layout_height="80dp"
+            android:text="Registrar LLenado"
+            android:id="@+id/button"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:elevation="10dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/frameLayout"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:padding="10dp">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:id="@+id/tableLayout"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/frameLayout">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:elevation="10dp"
+                    android:contextClickable="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Numero de serie:"
+                        android:id="@+id/textView6"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="#1a0000"
+                        android:textSize="12dp"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:layout_width="123dp"
+                        android:layout_height="32dp"
+                        android:id="@+id/editText"
+                        android:layout_gravity="center"
+                        android:background="#f3f1f1"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textAlignment="center" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox"
+                        android:layout_gravity="right|center_vertical"
+                        android:checked="false" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:elevation="10dp"
+                    android:contextClickable="false" >
+
+                    <EditText
+                        android:layout_width="123dp"
+                        android:layout_height="32dp"
+                        android:id="@+id/editText2"
+                        android:layout_gravity="center"
+                        android:background="#f3f1f1"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tara real:"
+                        android:id="@+id/textView7"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="#1a0000"
+                        android:textSize="12dp"
+                        android:padding="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox2"
+                        android:layout_gravity="right|center_vertical"
+                        android:checked="false" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="400dp"
+                    android:layout_height="50dp"
+                    android:elevation="10dp"
+                    android:contextClickable="false" >
+
+                    <EditText
+                        android:layout_width="123dp"
+                        android:layout_height="32dp"
+                        android:id="@+id/editText3"
+                        android:layout_gravity="center"
+                        android:background="#f3f1f1"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:text="Prueba Hidrostatica"
+                        android:id="@+id/textView8"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="#1a0000"
+                        android:textSize="12dp"
+                        android:padding="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox3"
+                        android:layout_gravity="right|center_vertical"
+                        android:checked="false" />
+                </FrameLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="400dp"
+            android:layout_height="119dp"
+            android:layout_gravity="left|center_vertical"
+            android:elevation="10dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="400dp"
+                    android:layout_height="50dp"
+                    android:contextClickable="false"
+                    android:layout_column="0">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tara impresa"
+                        android:id="@+id/textView9"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="#1a0000"
+                        android:textSize="12dp"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="32dp"
+                        android:id="@+id/editText4"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="#f3f1f1"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textAlignment="center" />
+
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="400dp"
+                    android:layout_height="50dp"
+                    android:contextClickable="false"
+                    android:layout_column="0" >
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Capacidad Cloro"
+                        android:id="@+id/textView10"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="#1a0000"
+                        android:textSize="12dp"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="32dp"
+                        android:id="@+id/editText5"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="#f3f1f1"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textAlignment="center" />
+
+                </FrameLayout>
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            android:layout_width="131dp"
+            android:layout_height="131dp"
+            android:id="@+id/imageView3"
+            android:layout_gravity="center_horizontal|bottom" />
+
+    </FrameLayout>
+
+</RelativeLayout>

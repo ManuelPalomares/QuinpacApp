@@ -12,6 +12,8 @@ import android.widget.EditText;
 import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.vision.barcode.Barcode;
 
+import java.util.Date;
+
 /**
  * Created by mpalomar on 17/11/2015.
  */
@@ -21,6 +23,8 @@ public class ActividadLlenado extends Activity {
     private static final int RC_BARCODE_CAPTURE = 9001;
     private EditText eCodigoBarras;
     private static final String TAG = "Actividad Llenado";
+    private EditText eLote;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +34,23 @@ public class ActividadLlenado extends Activity {
 
         bt_camara = (Button) findViewById(R.id.x_codigobarras);
         eCodigoBarras = (EditText) findViewById(R.id.x_codigobarrascapturado);
+        eLote = (EditText) findViewById(R.id.x_lote);
+        Date fecha = new Date();
 
+        System.out.println(fecha.getMonth() + " " + fecha.getYear() + fecha.getDay());
+        StringBuilder lote = new StringBuilder();
+        lote.append(fecha.getMonth());
+        lote.append(fecha.getYear());
+        if(fecha.getDay() > 15){
+            lote.append("2");
+        }else
+        {
+            lote.append("1");
+        }
+
+
+
+        eLote.setText(lote.toString());
 
         bt_camara.setOnClickListener(new View.OnClickListener() {
             @Override
