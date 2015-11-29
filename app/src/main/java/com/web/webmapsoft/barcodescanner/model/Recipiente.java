@@ -13,6 +13,15 @@ public class Recipiente {
     private Date   fechaHidroStatica;
     private Date   fechaPrueba;
     private String codigoBarras;
+    private String taraNueva;
+
+    public String getTaraNueva() {
+        return taraNueva;
+    }
+
+    public void setTaraNueva(String taraNueva) {
+        this.taraNueva = taraNueva;
+    }
 
     public String getSerie() {
         return serie;
@@ -68,5 +77,19 @@ public class Recipiente {
 
     public void setCodigoBarras(String codigoBarras) {
         this.codigoBarras = codigoBarras;
+    }
+
+
+    public String getTipoRecipiente(){
+
+        if(Integer.parseInt(this.taraReal) >= 45 & Integer.parseInt(this.taraReal) <= 70){
+            return "C";
+        }
+
+        if(Integer.parseInt(this.taraReal)>=520 & Integer.parseInt(this.taraReal) <= 800) {
+            return "T";
+        }
+
+        return "";
     }
 }

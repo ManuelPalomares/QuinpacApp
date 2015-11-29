@@ -33,6 +33,10 @@
             android:label="Leer Codigo de Barras"/>
 
         <activity android:name=".ActividadLlenado" android:label="SIBTC QUIMPAC DE COLOMBIA S.A. LLENADO"/>
+        <activity android:name=".ActividadActualizarTara" android:label="SIBTC QUIMPAC DE COLOMBIA S.A. ACTUALIZAR TARA"/>
+        <activity android:name=".ActividadActualizarCodigoBar" android:label="SIBTC QUIMPAC DE COLOMBIA S.A. ACTUALIZAR CODIGO BARRA"/>
+
+
     </application>
 
 </manifest>
